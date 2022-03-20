@@ -1,0 +1,114 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.cabecalho{
+    background: #5C16C5;
+    width: 100%;
+    padding: 10px 0;
+}
+.cabecalho h1{
+    display: inline-block;
+    padding: 16px 0;
+    margin-left: 10%;
+}
+.navegacao{
+    background:#2D0C5E ;
+    width: 100%;
+}
+.navegacao-apresentacao h2{
+    color: white;
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+}
+.navegacao-apresentacao{
+    width: 50%;
+    padding: 10%;
+    margin: 0 auto;
+    padding: 3% 0;
+}
+.navegacao-categorias{
+    width: 50%;
+    padding: 10%;
+    margin: 0 auto;
+    padding: 1% 0;
+}
+
+.navegacao-categorias p{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+.botoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    padding-top: 2%;
+    padding-right: 2%;
+    list-style: none;
+    width: 100%;
+}
+.botoes li{
+    background-color: #fff;
+    padding: 1%;
+    margin: 0.5%;
+    border-radius: 5px;
+    text-align: center;
+}
+.botoes li label{
+    color: #323232;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+}
+
+.botoes li input[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+    width: 2%;
+}
+
+.filmes{
+    width: 100%;
+
+}
+.secao-filmes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 85%;
+    margin-left: 10%;
+    margin-top: 2.5%;
+}
+
+.secao-filmes li{
+    width:16%;
+}
+
+.secao-filmes li img{
+    width:85%;
+}
+
+.titulo{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.data{
+    color: #646464;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20%;
+}
+.botoes li input[type="checkbox"]:checked + label {
+    content: "";
+    height: 18px;
+    background: url('asserts/close.png') right no-repeat;
+    transition: all .2s;
+    display: flex;
+    padding-right: 20px;
+    justify-content: flex-end;
+    align-items: baseline;
+}
